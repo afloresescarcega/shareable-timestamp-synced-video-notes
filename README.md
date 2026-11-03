@@ -37,4 +37,4 @@ flowchart LR
 npm test
 ```
 
-📖 Terms: [GLOSSARY.md](GLOSSARY.md) · Decisions: [docs/adr](docs/adr)
+📖 Terms: [GLOSSARY.md](GLOSSARY.md) · Decisions: [docs/adr](docs/adr) · License: [MIT](LICENSE)
