@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Cue",
+  "version": "0.1.0",
+  "description": "Shows Cues beside YouTube videos: context you need to follow the narration.",
+  "permissions": [
+    "storage"
+  ],
+  "options_ui": {
+    "page": "src/options.html",
+    "open_in_tab": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "src/youtube-data.js",
+        "src/source-material.js",
+        "src/settings.js",
+        "src/cost-estimate.js",
+        "src/anthropic.js",
+        "src/draft.js",
+        "src/notes.js",
+        "src/notes-store.js",
+        "src/notes-file.js",
+        "src/prepare.js",
+        "src/user-action.js",
+        "src/map-tiles.js",
+        "src/cue-view.js",
+        "src/cue-render.js",
+        "src/content.js"
+      ],
+      "css": [
+        "src/content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+body { font: 14px/1.5 system-ui, sans-serif; margin: 16px; min-width: 360px; max-width: 560px; color: #1f1f1f; }
+h1 { font-size: 18px; margin: 0 0 12px; }
+label { display: block; font-weight: 600; }
+input { box-sizing: border-box; width: 100%; padding: 6px 8px; font: inherit; font-family: ui-monospace, monospace; }
+.actions { display: flex; gap: 8px; margin-top: 8px; }
+.hint { color: #5f6368; margin: 4px 0; }
+.message { min-height: 1.5em; margin: 8px 0 0; }
+.message[data-state="error"] { color: #b3261e; }

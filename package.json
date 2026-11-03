@@ -1,0 +1,7 @@
+{
+  "name": "cue",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  }
+}

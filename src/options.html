@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cue options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <h1>Cue options</h1>
+  <form id="api-key-form" autocomplete="off">
+    <label for="api-key">Anthropic API key</label>
+    <p id="api-key-saved" class="hint" aria-live="polite"></p>
+    <input id="api-key" type="password" name="api-key" spellcheck="false" placeholder="sk-ant-…" aria-describedby="api-key-about">
+    <div class="actions">
+      <button type="submit">Save</button>
+      <button type="button" id="api-key-clear">Clear</button>
+    </div>
+    <p id="api-key-message" class="message" role="status"></p>
+  </form>
+  <p id="api-key-about" class="hint">
+    Prepare uses your own key to send a Video's Transcript to Anthropic and generate its Draft.
+    The key is kept only in this browser's extension storage and is sent only to api.anthropic.com, when you click Prepare.
+    Cue has no server and collects no data. Create a key at
+    <a href="https://platform.claude.com/settings/keys" target="_blank" rel="noopener noreferrer">platform.claude.com/settings/keys</a>;
+    usage is billed to your Anthropic account.
+  </p>
+  <script src="settings.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
